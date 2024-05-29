@@ -1,0 +1,23 @@
+body{
+    display:flex;
+    flex-direction:column;
+    background-color: bisque;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    height: 350px;
+    row-gap: 20px;
+    column-gap:20px;
+}
+
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.539);
+    text-align:center;
+    font-size: 50px;
+}
