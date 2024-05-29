@@ -16,7 +16,6 @@ function updateGameBoard(boardindex, player){
 }
 function updateCurrentPlayer()  {
     gameFactory.currentPlayer = gameFactory.currentPlayer === "X" ? "O" : "X";
-    console.log("Updated Player:", gameFactory.currentPlayer);
 }
 function resetGameBoard(){
     gameFactory.gameBoard = ["", "", "", "", "", "", "", "", ""];
@@ -55,7 +54,6 @@ gridItems.forEach((currentSquare) =>{
             gameFactory.updateGameBoard(index, gameFactory.currentPlayer);
             gridItems[index].textContent = gameFactory.currentPlayer;
             currentSquare.classList.add("selected");
-            console.log("Game Board after click:", gameFactory.gameBoard); // Log game board state
             checkWinCondition();
         }
         else{
